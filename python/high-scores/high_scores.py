@@ -1,16 +1,13 @@
 def latest(scores):
-    while scores:
-        for score in scores:
-            if scores.index(score) == len(scores) - 1:
-                return score
+    for score in scores:
+        if scores.index(score) == len(scores) - 1:
+            return score
 
 
 
 def personal_best(scores):
-    while scores:
-        return max(scores)
+    return max(scores)
 
 
 def personal_top_three(scores):
-    while scores:
-        return sorted(scores, reverse=True)[0:3]
+    return sorted(scores, reverse=True)[0:3]
